@@ -1,0 +1,51 @@
+nav {
+    position: fixed;
+    width: 100%;
+    transition: all 0.5s;
+    box-sizing: border-box;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+
+.nav-scroll {
+    background-color: #355592;
+}
+
+.nav-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.nav-ul li {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-left: 500px;
+}
+
+.nav-ul li a {
+    display: flex;
+    text-decoration: none;
+    color: aliceblue;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 800;  
+}
+
+.href-join {
+    background-color: rgba(242, 149, 18, 0.924);
+    padding: 6px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.nav-hamburger-menu {
+    visibility: hidden;
+}
+
+.hamburger-icon {
+    visibility: hidden;
+}

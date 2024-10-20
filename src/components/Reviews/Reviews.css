@@ -1,0 +1,104 @@
+.review-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aliceblue;
+    overflow-x: hidden;
+    position: relative;
+    z-index: 1; 
+}
+
+.review-info-container h1 {
+    color: #355592;
+    text-align: center;
+    position: relative;
+    padding-bottom: 16px;
+    padding-top: 50px;
+    font-weight: 900;
+}
+
+.review-info-container h1::after {
+    content: '';
+    position: absolute;
+    left: 50%; /*Ortalar*/
+    bottom: 0;
+    transform: translateX(-50%); /*Tam olarak ortalamak için*/
+    width: 72px;
+    height: 6px;
+    background-color: rgba(242, 149, 18, 0.924);
+    border-radius: 5px;
+}
+
+.review-description {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.review-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-x: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.client-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: aliceblue;
+    overflow-x: hidden;
+    padding: 50px 300px 100px 200px;
+    gap: 150px;
+}
+
+.client {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.8;
+    font-size: 20px;
+}
+
+.client-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.client img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.client-container h4 {
+    margin: 20px;
+}
+
+.client-review {
+    background-color: #355592;
+    color: white;
+    /*margin-right: 100px;*/
+    padding: 10px;
+    padding-right: 20px;
+    text-align: start;
+    line-height: 1.2;
+    font-size: 16px;
+    position: relative;
+    z-index: 1;
+    clip-path: polygon(0 100%, 10% 90%, 90% 90%, 100% 100%, 100% 0, 0 0);
+}
+
+.client-review::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}

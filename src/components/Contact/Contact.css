@@ -1,0 +1,101 @@
+.contact-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    overflow-x: hidden;
+    position: relative;
+    z-index: 1; 
+}
+
+.contact-info-container h1 {
+    color: #355592;
+    text-align: center;
+    position: relative;
+    padding-bottom: 16px;
+    padding-top: 50px;
+    font-weight: 900;
+}
+
+.contact-info-container h1::after {
+    content: '';
+    position: absolute;
+    left: 50%; /*Ortalar*/
+    bottom: 0;
+    transform: translateX(-50%); /*Tam olarak ortalamak için*/
+    width: 72px;
+    height: 6px;
+    background-color: rgba(242, 149, 18, 0.924);
+    border-radius: 5px;
+}
+
+.contact-description {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    margin-left: 300px;
+    margin-top: 50px;
+    margin-right: 400px;
+}
+
+.form-info-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.info-container h3 {
+    display: block;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.689);
+    margin-left: 0;
+    margin-bottom: 5px;
+}
+
+.info-container p {
+    display: block;
+    margin-left: 0;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.689);
+    margin-top: 10px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container h2 {
+    color: rgba(0, 0, 0, 0.750);;
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+#name, #email, #message{
+    background-color: aliceblue;
+    padding: 4px 100px 4px 8px;
+    font-size: 16px;
+    font-weight: 400;
+    border: aliceblue;
+}
+
+.map-container {
+    width: 100%;
+    padding: 0;
+    padding-left: 50px;
+    margin: 0px 200px 180px 20px;
+}

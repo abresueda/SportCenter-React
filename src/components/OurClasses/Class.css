@@ -1,0 +1,197 @@
+.class-container {
+    background-color: white;
+    overflow-x: hidden;
+    position: relative;
+    z-index: 1; 
+}
+
+/*Container'ın arkasında clip-path yapmak için.*/
+.class-container::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.1);
+    clip-path: polygon(30% 0%, 100% 0, 100% 100%, 50% 100%);
+    z-index: -1;
+}
+
+.class-container h1 {
+    color: #355592;
+    text-align: center;
+    position: relative;
+    padding-bottom: 16px;
+    padding-top: 50px;
+    font-weight: 900;
+}
+
+.class-container h1::after {
+    content: '';
+    position: absolute;
+    left: 50%; /*Ortalar*/
+    bottom: 0;
+    transform: translateX(-50%); /*Tam olarak ortalamak için*/
+    width: 72px;
+    height: 6px;
+    background-color: rgba(242, 149, 18, 0.924);
+    border-radius: 5px;
+}
+
+.class-description {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+}
+
+.btn-class {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 4px 16px 4px 16px;
+    margin-top: 50px; 
+    margin-bottom: 20px;
+    color: white;
+    background-color: #355592;
+    border: 4px solid #355592;
+    border-radius: 4px;
+}
+
+.btn-class.active {
+    background-color: rgba(242, 149, 18, 0.924);
+    border: 4px solid rgba(242, 149, 18, 0.924);
+    border-radius: 4px;
+}
+
+.class-current {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin-top: 40px;
+}
+
+.class-text-container {
+    flex: 8;
+    color: rgba(0, 0, 0, 0.708);
+    line-height: 1.4;
+    font-weight: 800;
+    font-size: 24px;
+    margin-left: 100px;
+    padding-left: 100px;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.class-text-container h2, p {
+    margin-left: 30px;
+    margin-right: 0;
+}
+
+.class-image-container {
+    flex: 1; /*Resim için alan ayırır.*/
+    margin-left: 0;
+    padding-left: 0;
+    margin-right: 100px;
+    padding-right: 100px;
+}
+
+.class-image {
+    width: 500px;
+    height: 400px;
+    margin-left: 500px;
+}
+
+#current-image {
+    width: 200px;
+    height: 100%;
+    margin: 100px;
+    padding-right: 100px;
+}
+
+.class-bmi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin: 50px;
+}
+
+.class-bmi-text {
+    flex: 3;
+    color: rgba(0, 0, 0, 0.708);
+    text-align: start;
+    line-height: 1.4;
+    font-weight: 800;
+    font-size: 20px;
+    margin-left: 100px;
+    margin-right: 200px;
+}
+
+.class-bmi-text h1 {
+    color: #355592;
+    font-size: 32px;
+    margin-left: 36px;
+    font-weight: 900;
+}
+
+.class-bmi-text input {
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 15px;
+    margin-left: 30px;
+}
+
+.class-bmi-text label {
+    font-weight: 300;
+}
+
+.class-bmi-image {
+    flex: 1;
+    margin: 0;
+}
+
+.class-bmi-image h2 {
+    text-align: center;
+}
+
+.bmi-inputs {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.bmi-inputs input {
+    display: inline-block;
+    margin: 0;
+    margin-right: 30px;
+    margin-left: 30px;
+    border: 2px solid black;
+}
+
+.bmi-inputs label {
+    display: inline-block;margin-right: 50px;
+    margin: 0;
+}
+
+.bmi-inputs label span {
+    display: inline-block;
+}
+
+#height {
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+#weight {
+    display: inline-block; 
+}
+
+.arrow-up {
+    width: 10%;
+}
